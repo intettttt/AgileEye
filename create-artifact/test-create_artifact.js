@@ -1,5 +1,5 @@
 var assert = require('assert');
-const create_artifact = require('../create_artifact');
+const create_artifact = require('./create_artifact');
 
 describe('TS4 - Create Artifact', function () {
     describe('Evaluate artifact creation and validation', () => {
