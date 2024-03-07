@@ -1,5 +1,5 @@
 var assert = require('assert');
-const join_team = require('./join_team');
+const join_team = require('../join_team');
 
 describe('TS6 - Join Team', function () {
     describe('Validate team joining processes and permissions.', () => {
@@ -49,7 +49,7 @@ describe('TS6 - Join Team', function () {
             const id = "220000001163";
             const fname = "Andre";
             const lname = "Ruiz";
-            const role = "0";
+            const role = "1"
             const team_id = "123";
             const team_name = "Agile Eye";
             const team_role = "Document Specialist";
