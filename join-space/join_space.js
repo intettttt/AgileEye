@@ -7,7 +7,7 @@ function join_space(space_code, space_status) {
                 status: "0"
             },
             {
-                code: "A4BE0YA",
+                code: "EEEEEEE",
                 status: "1"
             }
         ],
@@ -17,8 +17,11 @@ function join_space(space_code, space_status) {
     for (var element in arr["obj"]) {
         console.log(arr["obj"][element]);
 
-        if (arr["obj"][element]["code"] === space_code) {
-            return arr["obj"][element]["status"] === "0" && space_status === "0";
+        if (arr["obj"][element]["code"] === space_code && arr["obj"][element]["status"] === "0" ){
+            return true
+        } 
+        if (arr["obj"][element]["code"] === space_code && arr["obj"][element]["status"] === "1" ){
+            return false
         }
     }
 

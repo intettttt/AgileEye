@@ -13,7 +13,7 @@ describe('TS3 - Join Space', function () {
         });
       
         it('Attempt to Join a Closed Space', () => {
-            const space_code = "A4BE0YZ";
+            const space_code = "EEEEEEE";
             const space_status = "1";
             // Act
             const result = join_space(space_code,space_status);
