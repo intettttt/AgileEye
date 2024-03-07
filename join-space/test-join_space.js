@@ -1,5 +1,5 @@
 var assert = require('assert');
-const join_space = require('../join-space/join_space');
+const join_space = require('./join_space');
 
 describe('TS3 - Join Space', function () {
     describe('Space participation and joining process', () => {
