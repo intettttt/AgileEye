@@ -6,21 +6,21 @@ function register(fname, lname, id, email_address, password) {
   const arr = {
     obj: [
         {
-          fname: "Intet",
-          lname: "Tetz",
+          fname: "Andre",
+          lname: "Ruiz",
           id: "220000001163",
-          email_address: "entet@gmail.com",
-          password: "ikawlangz"
+          email_address: "aruiz_220000001163@uic.edu.ph",
+          password: "12345"
         }
     ],
 }
 
 for (var element in arr["obj"]) {
   console.log(arr["obj"][element]);
-  if (users[element].id === id) {
+  if (arr["obj"][element]["id"] === id) {
     return false;
 }
-  if (users[element].email_address === email_address) {
+  if (arr["obj"][element]["email_address"] === email_address) {
     console.log("Email address already exists");
     return false;
 }
