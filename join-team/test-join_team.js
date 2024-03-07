@@ -1,9 +1,9 @@
 var assert = require('assert');
-const create_artifact = require('./create_artifact');
+const join_team = require('./join_team');
 
-describe('TS5 - Create Artifact', function () {
-    describe('Evaluate artifact creation and validation', () => {
-        it('Successfully Create Artifact', () => {
+describe('TS6 - Join Team', function () {
+    describe('Validate team joining processes and permissions.', () => {
+        it('Successfully Join a Team', () => {
             const title = "Lesson 2";
             const description = "asdadasd";
             const sdate = "04-03-2024";

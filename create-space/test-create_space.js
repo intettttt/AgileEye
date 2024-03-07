@@ -1,5 +1,5 @@
 var assert = require('assert');
-const create_space = require('../create_space');
+const create_space = require('./create_space');
 
 describe('TS5 - Create Space', function () {
     describe('Confirm successful space creation and validation.', () => {
