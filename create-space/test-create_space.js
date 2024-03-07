@@ -9,7 +9,6 @@ describe('TS5 - Create Space', function () {
             const name = "Adiosz";
             const description = "hellow";
             const sec_year = "BSCS-2A";
-
             // Act
             const result = create_space(id,code,name,description,sec_year);
             // Assert

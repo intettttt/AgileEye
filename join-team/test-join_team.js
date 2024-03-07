@@ -4,36 +4,59 @@ const join_team = require('./join_team');
 describe('TS6 - Join Team', function () {
     describe('Validate team joining processes and permissions.', () => {
         it('Successfully Join a Team', () => {
-            const title = "Lesson 2";
-            const description = "asdadasd";
-            const sdate = "04-03-2024";
-            const edate = "04-13-2024";
+            const id = "220000001163";
+            const fname = "Andre";
+            const lname = "Ruiz";
+            const role = "0";
+            const team_id = "123";
+            const team_name = "Agile Eye";
+            const team_role = "Document Specialist";
             // Act
-            const result = create_artifact(title,title,sdate,edate);
+            const result = join_team(id, fname, lname, role, team_id, team_name, team_role);
             // Assert
             assert.equal(result,true);
         });
       
-        it('Create Artifact with Existing Title', () => {
-            const title = "Lesson 1";
-            const description = "asdadasd";
-            const sdate = "04-03-2024";
-            const edate = "04-13-2024";
+        it('Attempt to Join Already Joined Team', () => {
+            const id = "220000001163";
+            const fname = "Andre";
+            const lname = "Ruiz";
+            const role = "0";
+            const team_id = "123";
+            const team_name = "Agile Eye";
+            const team_role = "Document Specialist";
             // Act
-            const result = create_artifact(title,title,sdate,edate);
+            const result = join_team(id, fname, lname, role, team_id, team_name, team_role);
             // Assert
             assert.equal(result,false);
         });
 
-        it('Create Artifact with Mandatory Fields Empty', () => {
-            const title = "";
-            const description = "";
-            const sdate = "";
-            const edate = "";
+        it('Join Non-Existent Team', () => {
+            const id = "220000001163";
+            const fname = "Andre";
+            const lname = "Ruiz";
+            const role = "0";
+            const team_id = "123";
+            const team_name = "None";
+            const team_role = "Document Specialist";
             // Act
-            const result = create_artifact(title,title,sdate,edate);
+            const result = join_team(id, fname, lname, role, team_id, team_name, team_role);
             // Assert
             assert.equal(result,false);
-          });
+        });
+
+        it('Join Team Without Sufficient Permissions', () => {
+            const id = "220000001163";
+            const fname = "Andre";
+            const lname = "Ruiz";
+            const role = "0";
+            const team_id = "123";
+            const team_name = "Agile Eye";
+            const team_role = "Document Specialist";
+            // Act
+            const result = join_team(id, fname, lname, role, team_id, team_name, team_role);
+            // Assert
+            assert.equal(result,false);
+        });
       });
 });

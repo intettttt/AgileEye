@@ -1,4 +1,5 @@
 function create_space(id, code, name, description, sec_year, permission) {
+
     if (id === "" || code === "" || name === "" || sec_year === "" || permission === "") {
         return false;
     }

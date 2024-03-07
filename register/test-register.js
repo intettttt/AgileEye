@@ -1,7 +1,7 @@
 //test-register.js
 
 var assert = require('assert');
-const register = require('../register/register');
+const register = require('./register');
 
 describe('TS2 - Register', function () {
     describe('Registration', () => {
