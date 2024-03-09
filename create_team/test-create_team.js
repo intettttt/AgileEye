@@ -1,5 +1,5 @@
 var assert = require('assert');
-const create_team = require('./create_team');
+const create_team = require('../create_team/create_team');
 
 describe('TS11 - Create Team', function () {
     describe('Confirm successful team creation and validation.', () => {

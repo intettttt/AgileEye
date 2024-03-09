@@ -15,17 +15,17 @@ function register(fname, lname, id, email_address, password) {
     ],
 }
 
-for (var element in arr["obj"]) {
-  console.log(arr["obj"][element]);
-  if (arr["obj"][element]["id"] === id) {
-    return false;
-}
-  if (arr["obj"][element]["email_address"] === email_address) {
-    console.log("Email address already exists");
-    return false;
-}
-}
-  console.log("Successfully registered:", { fname, lname, id, email_address, password });
-      return true;
-}
+          for (var element in arr["obj"]) {
+            console.log(arr["obj"][element]);
+            if (arr["obj"][element]["id"] === id) {
+              return false;
+          }
+            if (arr["obj"][element]["email_address"] === email_address) {
+              console.log("Email address already exists");
+              return false;
+          }
+          }
+            console.log("Successfully registered:", { fname, lname, id, email_address, password });
+                return true;
+          }
 module.exports = register;
