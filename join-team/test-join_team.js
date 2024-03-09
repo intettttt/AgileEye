@@ -21,14 +21,14 @@ describe('TS6 - Join Team', function () {
             const id = "220000001163";
             const fname = "Andre";
             const lname = "Ruiz";
-            const role = "0";
+            const role = "0";  // Change role to "0"
             const team_id = "123";
             const team_name = "Agile Eye";
             const team_role = "Document Specialist";
             // Act
             const result = join_team(id, fname, lname, role, team_id, team_name, team_role);
             // Assert
-            assert.equal(result,false);
+            assert.equal(result, false);
         });
 
         it('Join Non-Existent Team', () => {
