@@ -1,5 +1,5 @@
 var assert = require('assert');
-const join_team = require('./join_team');
+const join_team = require('../join-team/join_team');
 
 describe('TS6 - Join Team', function () {
     describe('Validate team joining processes and permissions.', () => {

@@ -24,7 +24,6 @@ function join_space(space_code, space_status) {
             return false
         }
     }
-
     return false;
 }
 

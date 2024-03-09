@@ -3,11 +3,11 @@ function assigned_team_role(team_name, team_id, team_role, role_status) {
     const arr = {
         obj: [
             {
-                "user_id": "121546",
-                "team_name": "Agile Eye",
-                "team_id": "1123312",
-                "team_role": "Developer",
-                "role_status": "0"
+                user_id: "121546",
+                team_name: "Agile Eye",
+                team_id: "1123312",
+                team_role: "Developer",
+                role_status: "0"
             }
             // Add more user objects as needed
         ]
