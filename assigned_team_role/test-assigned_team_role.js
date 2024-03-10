@@ -33,12 +33,12 @@ describe('TS12 - Assgined Team Role', function () {
             const user_id = "121546";
             const team_name = "Agile Eye";
             const team_id = "1123312";
-            const team_role = "Developer";
+            const team_role = "Tester";
             const role_status = "0";
             // Act
             const result = assigned_team_role(user_id, team_name, team_id, team_role, role_status);
             // Assert
-            assert.equal(result, false);
+            assert.equal(result, true);
           });
       });
 });
