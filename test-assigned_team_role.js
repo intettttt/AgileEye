@@ -1,7 +1,7 @@
 //test-assigned_team_role.js
 
 var assert = require('assert');
-const assigned_team_role = require('../assigned_team_role');
+const assigned_team_role = require('../assigned_team_role/assigned_team_role');
 
 describe('TS12 - Assgined Team Role', function () {
     describe('Validate team role', () => {

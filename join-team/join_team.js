@@ -1,5 +1,4 @@
-function join_team(id, role, team_id, team_name, team_role) {
-
+function join_team(id, fname, lname, role, team_id, team_name, team_role) { //diri kay wla nimo gipasok si fname ug lname, mao nalahi giaassign ang mga values params (si team name na gipasa nimo kay naay sa team role)
     const arr = {
         obj: [
             {
@@ -15,8 +14,9 @@ function join_team(id, role, team_id, team_name, team_role) {
 
     // Loop through the array of teams
     for (var element of arr["obj"]) {
-        if (element["team_id"] === team_id && element["team_name"] === team_name && element["team_role"] === team_role) {
-            if (element["team_name"] === "") {
+
+        if (element["team_id"] === team_id && element["team_name"] === team_name && element["team_role"] !== team_role) {
+            if (element["id"] === id) {
                 console.log("User is already a member of the team");
                 return false;
             }
